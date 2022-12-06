@@ -9,51 +9,60 @@ $(function () {
 
   // Click listeners to save the notes
   var saveBtn = document.querySelectorAll(".saveBtn");
-  var textarea = document.getElementsByTagName("textarea");
+  var textarea = document.querySelectorAll(".description");
 
   saveBtn[0].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("9am", textarea[0].value);
+    document.getElementById("message").innerHTML = "Event(s) for 9am added to local storage!";
   })
 
   saveBtn[1].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("10am", textarea[1].value);
+    document.getElementById("message").innerHTML = "Event(s) for 10am added to local storage!";
   })
 
   saveBtn[2].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("11am", textarea[2].value);
+    document.getElementById("message").innerHTML = "Event(s) for 11am added to local storage!";
   })
 
   saveBtn[3].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("12pm", textarea[3].value);
+    document.getElementById("message").innerHTML = "Event(s) for 12pm added to local storage!";
   })
 
   saveBtn[4].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("1pm", textarea[4].value);
+    document.getElementById("message").innerHTML = "Event(s) for 1pm added to local storage!";
   })
 
   saveBtn[5].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("2pm", textarea[5].value);
+    document.getElementById("message").innerHTML = "Event(s) for 2pm added to local storage!";
   })
 
   saveBtn[6].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("3pm", textarea[6].value);
+    document.getElementById("message").innerHTML = "Event(s) for 3pm added to local storage!";
   })
 
   saveBtn[7].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("4pm", textarea[7].value);
+    document.getElementById("message").innerHTML = "Event(s) for 4pm added to local storage!";
   })
 
   saveBtn[8].addEventListener("click", function(e) {
     e.preventDefault();
     localStorage.setItem("5pm", textarea[8].value);
+    document.getElementById("message").innerHTML = "Event(s) for 5pm added to local storage!";
   })
 
 
@@ -133,18 +142,18 @@ $(function () {
     document.getElementById("hour-5").classList.add("past");
   }
   
-  //
-  // TODO: Add code to get any user input that was saved in localStorage and set
-  // the values of the corresponding textarea elements. HINT: How can the id
-  // attribute of each time-block be used to do this?
-  textarea[0].value = localStorage.getItem["9am"];
-  textarea[1].value = localStorage.getItem["10am"];
-
-
-
-
+  //Retrieve the data from local storage 
+  textarea[0].value = localStorage.getItem("9am");
+  textarea[1].value = localStorage.getItem("10am");
+  textarea[2].value = localStorage.getItem("11am");
+  textarea[3].value = localStorage.getItem("12pm");
+  textarea[4].value = localStorage.getItem("1pm");
+  textarea[5].value = localStorage.getItem("2pm");
+  textarea[6].value = localStorage.getItem("3pm");
+  textarea[7].value = localStorage.getItem("4pm");
+  textarea[8].value = localStorage.getItem("5pm");
 
   // Display the current date in the header of the page.
-  var todayDate = dayjs().format('dddd, MMMM D');
+  var todayDate = dayjs().format('dddd, MMMM D, YYYY');
   $('#currentDay').text(todayDate);
   });
