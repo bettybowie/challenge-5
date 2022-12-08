@@ -69,79 +69,81 @@ $(function () {
   // Differentiate past, present, and future
   
   var currentTime = dayjs().format('H');
+  console.log(currentTime);
 
   if (currentTime < 9) {
     document.getElementById("hour-9").classList.add("future");
-  } else if (currentTime === 9 ) {
+  } else if (currentTime === 9) {
     document.getElementById("hour-9").classList.add("present");
-  } else {
+  } else if (currentTime > 9) {
     document.getElementById("hour-9").classList.add("past");
   }
   
   if (currentTime < 10) {
     document.getElementById("hour-10").classList.add("future");
-  } else if (currentTime === 10 ) {
+  } else if (currentTime === 10) {
     document.getElementById("hour-10").classList.add("present");
-  } else {
+  } else if (currentTime > 10) {
     document.getElementById("hour-10").classList.add("past");
   }
 
   if (currentTime < 11) {
     document.getElementById("hour-11").classList.add("future");
-  } else if (currentTime === 11 ) {
+  } else if (currentTime === 11) {
     document.getElementById("hour-11").classList.add("present");
-  } else {
+  } else if (currentTime > 11) {
     document.getElementById("hour-11").classList.add("past");
   }
 
-  if (currentTime < 12) {
+if (currentTime < 12) {
     document.getElementById("hour-12").classList.add("future");
-  } else if (currentTime === 12 ) {
+  } else if (currentTime === 12) {
     document.getElementById("hour-12").classList.add("present");
-  } else {
+  } else if (currentTime > 12)  {
     document.getElementById("hour-12").classList.add("past");
   }
 
   if (currentTime < 13) {
     document.getElementById("hour-1").classList.add("future");
-  } else if (currentTime === 13 ) {
+  } else if (currentTime === 13) {
     document.getElementById("hour-1").classList.add("present");
-  } else {
+  } else if (currentTime > 13) {
     document.getElementById("hour-1").classList.add("past");
   }
 
   if (currentTime < 14) {
     document.getElementById("hour-2").classList.add("future");
-  } else if (currentTime === 14 ) {
+  } else if (currentTime === 14) {
     document.getElementById("hour-2").classList.add("present");
-  } else {
+  } else if (currentTime > 14) {
     document.getElementById("hour-2").classList.add("past");
   }
 
   if (currentTime < 15) {
     document.getElementById("hour-3").classList.add("future");
-  } else if (currentTime === 15 ) {
+  } else if (currentTime === 15) {
     document.getElementById("hour-3").classList.add("present");
-  } else {
+  } else if (currentTime > 15) {
     document.getElementById("hour-3").classList.add("past");
   }
 
   if (currentTime < 16) {
     document.getElementById("hour-4").classList.add("future");
-  } else if (currentTime === 16 ) {
+  } else if (currentTime === 16) {
     document.getElementById("hour-4").classList.add("present");
-  } else {
+  } else if (currentTime > 16) {
     document.getElementById("hour-4").classList.add("past");
   }
 
   if (currentTime < 17) {
     document.getElementById("hour-5").classList.add("future");
-  } else if (currentTime === 17 ) {
+  } else if (currentTime === 17) {
     document.getElementById("hour-5").classList.add("present");
-  } else {
+  } else if (currentTime > 17) {
     document.getElementById("hour-5").classList.add("past");
   }
   
+
   //Retrieve the data from local storage 
   textarea[0].value = localStorage.getItem("9am");
   textarea[1].value = localStorage.getItem("10am");
