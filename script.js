@@ -3,7 +3,10 @@
 // in the html.
 $(function () {
   // Clear all the notes when a new day starts
-  if (currentTime === 0) {
+  var exactTime = dayjs().format('HHmmss');
+  console.log(exactTime);
+
+  if (exactTime === 000000) {
     localStorage.clear();
   }
 
