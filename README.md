@@ -1,4 +1,4 @@
-# challenge-5
+# dayPlanner
 
 ## Description
 
