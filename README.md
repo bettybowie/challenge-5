@@ -22,9 +22,9 @@ The events will be cleared by the end of the day.
 
 ## Links
 
-Solution URL: [https://github.com/bettybowie/challenge-5]
+Solution URL: [https://github.com/bettybowie/dayPlanner]
 
-Live URL: [https://bettybowie.github.io/challenge-5/]
+Live URL: [https://bettybowie.github.io/dayPlanner/]
 
 ## License
 
