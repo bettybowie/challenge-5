@@ -71,7 +71,7 @@ $(function () {
 
   // Differentiate past, present, and future
   
-  var currentTime = dayjs().format('H');
+  var currentTime = parseInt(dayjs().format('H'));
   console.log(currentTime);
 
   if (currentTime < 9) {
